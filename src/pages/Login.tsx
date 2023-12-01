@@ -64,7 +64,7 @@ const Login = () => {
                     </>
                     :
                     <>
-                        <CardTitle className="text-2xl">Login to your Account</CardTitle>
+                        <CardTitle className="text-2xl">Sign In to your account</CardTitle>
                         <CardDescription>
                                 Enter your credentials to login to your account
                         </CardDescription>
