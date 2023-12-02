@@ -20,6 +20,23 @@ variables:
   vmImageName: 'ubuntu-latest'
 
 stages:
+- stage: Test
+  displayName: Run Test Cases using Jest
+  jobs:
+  - job: Test
+    displayName: Run Test Cases
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSource: 'spec'
+        versionSpec: '18.x'
+    - task: Npm@1
+      inputs:
+         command: 'install'
+    - task: Npm@1
+      inputs:
+        command: 'custom'
+        customCommand: 'run test'
 - stage: Build
   displayName: Build and push stage
   jobs:
