@@ -1,3 +1,4 @@
+import Counter from "@/components/Counter";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
                     <CardDescription>
                         This is the home page. Welcome, Raahim.
                     </CardDescription>
+                    <Counter></Counter>
                 </CardContent>
             </Card>
         </div>
